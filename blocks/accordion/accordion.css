@@ -2,7 +2,7 @@
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px 0px 35px 20px;
     width: 100%;
     border: none;
     text-align: left;
@@ -12,19 +12,19 @@
   }
   .close{
     padding: 10px;
-    background-color: red;
     background-image: url('arrow.svg');
     width: 3px;
+    background-color: aqua;
     margin-left: 1158px;
-    margin-top: -21px;
+    margin-top: -36px;
   }
   .open{
-    padding: 10px;
-    background-color: greenyellow;
+    padding: 15px;
     background-image: url('arrow.svg');
     width: 3px;
+    background-color: blue;
     margin-left: 1158px;
-    margin-top: -21px;
+    margin-top: -36px;
   }
   h6 {
     font-size: 24px !important;
