@@ -1,0 +1,11 @@
+.popup {
+    padding: 20px;
+    position: fixed;
+    justify-items: center;
+    background-color: white;
+    top: 50%;
+    width: 40%;
+    left: 49%;
+    text-align: center;
+    display: none;
+}

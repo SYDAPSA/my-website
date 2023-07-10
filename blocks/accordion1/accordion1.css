@@ -1,4 +1,4 @@
-.accordion {
+.accordion1 {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -29,7 +29,7 @@
   h6 {
     font-size: 24px !important;
   }
-  .accordion-wrapper {
+  .accordion1-wrapper {
     margin-top:-40px;
   }
 
