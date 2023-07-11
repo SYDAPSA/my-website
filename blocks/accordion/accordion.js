@@ -1,26 +1,33 @@
-var a = document.querySelectorAll('.accordion div:nth-child(2)');
-a[0].style.display='none'
-var b = document.querySelectorAll('.accordion div:nth-child(1)>div')[0];
-var cr = document.createElement('span');
-cr.setAttribute('class','close')
-var cr1 = document.createElement('span');
-cr1.setAttribute('class','open')
-cr1.style.display="none"
-b.append(cr)
-b.append(cr1)
-var c = document.getElementsByClassName('close')[0];
-c.addEventListener("click",clse);
-function clse(){
-    document.querySelectorAll('.accordion div:nth-child(1)>div>span')[0].style.display="none"
-    document.getElementsByClassName('open')[0].style.display="block"
-    a[0].style.display='block';
-}
-var d = document.getElementsByClassName('open')[0];
-d.addEventListener("click",open);
-async function open(){
-    a[0].style.display='none'
-    document.querySelectorAll('.accordion div:nth-child(1)>div>span')[0].style.display="block"
-    document.getElementsByClassName('open')[0].style.display="none"
-
+var xyz = document.querySelectorAll(".accordion >div");
+for (var i = 0; i < xyz.length; i++) {
+  xyz[i].classList.add("container");
 }
 
+var ab = document.querySelectorAll(".accordion .container div");
+
+for (var i = 0; i < ab.length; i++) {
+  if (i % 2 == 0) {
+    ab[i].classList.add("question");
+  } else {
+    ab[i].classList.add("answer");
+  }
+}
+
+
+const acc = document.getElementsByClassName("container");
+
+
+var panels = document.getElementsByClassName("question");
+var i;
+var j;
+
+var handleAccordionClick = function () {
+  for (j = 0; j < panels.length; j++) {
+    acc[j].classList.remove("active");
+  }
+  this.classList.toggle("active");
+};
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = handleAccordionClick;
+}

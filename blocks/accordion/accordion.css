@@ -1,35 +1,45 @@
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 10px 0px 35px 20px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  .close{
-    padding: 10px;
-    background-image: url('arrow.svg');
-    width: 3px;
-    background-color: aqua;
-    margin-left: 1158px;
-    margin-top: -36px;
-  }
-  .open{
-    padding: 15px;
-    background-image: url('arrow.svg');
-    width: 3px;
-    background-color: blue;
-    margin-left: 1158px;
-    margin-top: -36px;
-  }
-  h6 {
-    font-size: 24px !important;
-  }
-  .accordion-wrapper {
-    margin-top:-40px;
-  }
+.accordion .question {
+  position: relative;
+  padding: 10px 10px;
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  font-style: italic;
+  border: 2px solid #ccc;
+  border-radius: 7px / 7px;
+}
 
+.accordion .question::before {
+  content: '+';
+  color: black;
+  padding-right: 10px;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .answer {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 18px;
+  color: brown;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-left: 40px;
+  margin-top: 20px;
+  line-height: 23px
+}
+
+.accordion .container.active .answer {
+  height: 140px;
+}
+
+.accordion .container.active .question::before {
+  content: '-';
+  font-size: 30px;
+}
