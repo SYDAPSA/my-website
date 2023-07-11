@@ -1,45 +1,57 @@
-.accordion .question {
+.accordion .savings {
   position: relative;
-  padding: 10px 10px;
-  font-size: 25px;
+  padding: 10px 13px;
+  font-size: 24px;
   color: black;
   cursor: pointer;
-  font-style: italic;
-  border: 2px solid #ccc;
-  border-radius: 7px / 7px;
+  background-color: #ebecec;
+  font-family: cursive;
 }
 
-.accordion .question::before {
-  content: '+';
+.accordion .savings::before {
+  content: "";
   color: black;
   padding-right: 10px;
   position: absolute;
-  top: 50%;
-  right: -5px;
+  top: 30%;
+  right: 16px;
   font-size: 30px;
-  transform: translateY(-50%);
+  width: 7px;
+  height: 16px;
+  border-top: 2px solid #3d4242;
+  border-left: 2px solid #3d4242;
+  transform: rotate(225deg);
 }
 
-.accordion .answer {
+.accordion .program {
   position: relative;
-  background: white;
   height: 0;
   font-size: 18px;
-  color: brown;
   text-align: justify;
   width: 780px;
   overflow: hidden;
   transition: 0.5s;
-  margin-left: 40px;
+  margin-left: 16px;
   margin-top: 20px;
-  line-height: 23px
+  line-height: 23px;
+  color: #3d4242;
+  font-family: math;
 }
 
-.accordion .container.active .answer {
-  height: 140px;
+.accordion .container.active .program {
+  height: 107px;
 }
 
-.accordion .container.active .question::before {
-  content: '-';
+.accordion .container.active .savings::before {
+  content: "";
   font-size: 30px;
+  border-top: 2px solid #3d4242;
+  border-left: 2px solid #3d4242;
+  transform: rotate(45deg);
+  margin-top: 12px;
+}
+
+.container.active {
+  background-color: #ebecec;
+  margin-bottom: 25px;
 }

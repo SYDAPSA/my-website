@@ -7,9 +7,9 @@ var ab = document.querySelectorAll(".accordion .container div");
 
 for (var i = 0; i < ab.length; i++) {
   if (i % 2 == 0) {
-    ab[i].classList.add("question");
+    ab[i].classList.add("savings");
   } else {
-    ab[i].classList.add("answer");
+    ab[i].classList.add("program");
   }
 }
 
@@ -17,7 +17,7 @@ for (var i = 0; i < ab.length; i++) {
 const acc = document.getElementsByClassName("container");
 
 
-var panels = document.getElementsByClassName("question");
+var panels = document.getElementsByClassName("savings");
 var i;
 var j;
 
