@@ -1,6 +1,6 @@
 .accordion .savings {
   position: relative;
-  padding: 10px 13px;
+  padding: 15px 25px;
   font-size: 24px;
   color: black;
   cursor: pointer;
@@ -28,10 +28,10 @@
   height: 0;
   font-size: 18px;
   text-align: justify;
-  width: 780px;
+  width: 817px;
   overflow: hidden;
   transition: 0.5s;
-  margin-left: 16px;
+  margin-left: 28px;
   margin-top: 20px;
   line-height: 23px;
   color: #3d4242;
@@ -39,7 +39,7 @@
 }
 
 .accordion .container.active .program {
-  height: 107px;
+  height: 127px;
 }
 
 .accordion .container.active .savings::before {
