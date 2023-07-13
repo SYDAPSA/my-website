@@ -2,10 +2,10 @@
     padding: 20px;
     position: fixed;
     justify-items: center;
-    background-color: white;
+    background-color: blanchedalmond;
     top: 50%;
-    width: 40%;
-    left: 49%;
+    width: 50%;
     text-align: center;
-    display: none;
+    cursor: pointer;
+    overflow: hidden;
 }
