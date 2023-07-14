@@ -7,9 +7,9 @@ var ab = document.querySelectorAll(".popup .container div");
 
 for (var i = 0; i < ab.length; i++) {
   if (i % 2 == 0) {
-    ab[i].classList.add("savings");
+    ab[i].classList.add("para1");
   } else {
-    ab[i].classList.add("program");
+    ab[i].classList.add("para2");
   }
 }
 
@@ -17,7 +17,7 @@ for (var i = 0; i < ab.length; i++) {
 const acc = document.getElementsByClassName("container");
 
 
-var panels = document.getElementsByClassName("savings");
+var panels = document.getElementsByClassName("para1");
 var i;
 var j;
 
