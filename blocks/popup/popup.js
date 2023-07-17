@@ -1,36 +1,15 @@
-var xyz = document.querySelectorAll(".popup >div");
-for (var i = 0; i < xyz.length; i++) {
-  xyz[i].classList.add("container");
-}
+var pop1 = document.querySelectorAll(".popup >div div");
 
-var ab = document.querySelectorAll(".popup .container div");
+pop1[0].classList.add("copay1");
+pop1[1].classList.add("copay2");
 
-for (var i = 0; i < ab.length; i++) {
-  if (i % 2 == 0) {
-    ab[i].classList.add("para1");
-  } else {
-    ab[i].classList.add("para2");
-  }
-}
+pop1[0].addEventListener("click", function () {
+  pop1[0].classList.add("popd1");
+  pop1[1].classList.add("popd");
+});
 
-
-const acc = document.getElementsByClassName("container");
-
-
-var panels = document.getElementsByClassName("para1");
-var i;
-var j;
-
-var handleAccordionClick = function () {
-  for (j = 0; j < panels.length; j++) {
-    if (acc[j] !== this) {
-      acc[j].classList.remove("active");
-    }
-  }
-  this.classList.toggle("active");
-};
-
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = handleAccordionClick;
-}
+var x = document.querySelector(".popup .copay2 h2");
+x.addEventListener("click", function () {
+  pop1[0].classList.remove("popd1");
+  pop1[1].classList.remove("popd");
+});
