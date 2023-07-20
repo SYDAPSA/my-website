@@ -14,8 +14,9 @@
 }
 
 .popup .copay2 img {
-    width: 250px;
-    margin-left: 0;
+    width: 246px;
+    margin-left: 7px;
+    border-radius: 10px;
 }
 
 
@@ -49,6 +50,8 @@
     overflow: hidden;
     padding: 14px 20px;
     font-family: var(--body-font-family);
+    margin-left: 279px;
+    margin-top: -50px;
 }
 
 .popd {
