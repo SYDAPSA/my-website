@@ -29,7 +29,7 @@
     font-size: 19px;
     float: right;
     margin-right: 8px;
-    margin-top: -163px;
+    margin-top: -110px;
     cursor: pointer;
 }
 
@@ -55,13 +55,13 @@
 }
 
 .cop {
-    width: 451px;
+    width: 443px;
     display: block !important;
     list-style: none;
     padding: 4px;
     background-color: #3d4242;
     color: #fff;
-    height: 347px;
+    height: 314px;
     position: fixed;
     top: 139px;
     font-size: 12px;
@@ -73,4 +73,7 @@
 }
 .copay1 {
     width: 151px;
+}
+strong {
+    font-size: 14px;
 }
