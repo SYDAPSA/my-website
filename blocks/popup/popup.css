@@ -29,7 +29,7 @@
     font-size: 19px;
     float: right;
     margin-right: 8px;
-    margin-top: 10px;
+    margin-top: -163px;
     cursor: pointer;
 }
 
@@ -50,25 +50,25 @@
     overflow: hidden;
     padding: 14px 20px;
     font-family: var(--body-font-family);
-    margin-left: 279px;
+    margin-left: 297px;
     margin-top: -50px;
 }
 
-.popd {
-    width: 424px;
+.cop {
+    width: 451px;
     display: block !important;
     list-style: none;
     padding: 4px;
     background-color: #3d4242;
     color: #fff;
-    height: 300px;
+    height: 347px;
     position: fixed;
     top: 139px;
     font-size: 12px;
     cursor: default;
 }
 
-.popd1 {
+.cop1 {
     display: none;
 }
 .copay1 {
